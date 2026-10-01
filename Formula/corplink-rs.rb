@@ -1,12 +1,12 @@
 class CorplinkRs < Formula
   desc "使用 rust 实现的飞连客户端"
   homepage "https://github.com/PinkD/corplink-rs"
-  version "X.Y.Z"
+  version "5.5"
   license "GPL-2.0"
 
   # 只保留 macOS ARM 架构
-  url "https://github.com/PinkD/corplink-rs/releases/download/v#{version}/corplink-rs-v#{version}-macos-arm64.tar.gz"
-  sha256 "REPLACE_WITH_ARM64_SHA256"
+  url "https://github.com/PinkD/corplink-rs/releases/download/#{version}/corplink-rs-#{version}-macos-arm64.tar.gz"
+  sha256 "sha256:c09e524ec144d058dd34ca0ac7da14b9cd0f3bd32b3b28c65b2f048f51f8d389"
 
   def install
     bin.install "corplink-rs"
