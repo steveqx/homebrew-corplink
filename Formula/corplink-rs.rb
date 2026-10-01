@@ -17,6 +17,7 @@ class CorplinkRs < Formula
     run [opt_bin/"corplink-rs", etc/"corplink-rs/config.json"]
     working_dir etc/"corplink-rs/"
     keep_alive true
+    log_path var/"log/corplink-rs.log"
   end
 
   livecheck do
